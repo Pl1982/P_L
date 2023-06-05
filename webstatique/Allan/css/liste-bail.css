@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    /*pas besoin de mettre d'unité si 0*/
+    padding: 0;
+}
+
+body {
+    background-color: lightsteelblue;
+}
+
+header {
+    padding: 2% 3%;
+    /*2% de marge intérieure pour la hauteur et 3% en largeur*/
+    background-color: darkred;
+    color: #fff;
+    text-align: center;
+}
+
+nav {
+    border-bottom: 5px solid white;
+    /*épaisseur - type de trait - couleur*/
+    border-radius: 0 0 50px 50px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    /*pour enlever les puces des listes à puces*/
+}
+
+nav ul li {
+    flex: 1;
+}
+
+li.grandespace {
+    flex: 3;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-style: oblique;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: lightsteelblue;
+    font-size: 1.6em;
+}
+
+nav img {
+    width: 119px;
+}
+
+h1 {
+    margin-top: 2%;
+    text-transform: uppercase;
+}
+
+
+/************************** main ***************************/
+
+main {
+    width: 80%;
+    margin: auto;
+}
+
+table {
+    border-left: 4px solid gray;
+    border-right: 4px solid gray;
+    width: 100%;
+}
+
+table tr {
+    padding: 5px 15px;
+}
+
+table tr td {
+    border-top: 2px solid palevioletred;
+    border-bottom: 2px solid palevioletred;
+    color: red;
+    text-align: right;
+}
+
+
+table h2 {
+    color: black;
+    border-left: 2px solid palevioletred;
+    text-align: left;
+    padding: .5em;
+}
+
+table h2:not(:first-child) {
+    border-top: 2px solid palevioletred;
+}
+
+table img {}
+
+/************************** footer ***************************/
+
+footer {
+    padding: 3% 0%;
+    background-color: darkred;
+    display: flex;
+}
+
+footer p {
+    flex: 1;
+    color: #fff;
+    text-align: center;
+}
+
+footer p a {
+    flex: 1;
+    text-decoration: none;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <style>
+            @keyframes fade {
+                  from {
+                        opacity: 0.4;
+                  }
+
+                  to {
+                        opacity: 1;
+                  }
+
+            }
+
+            .fade {
+                  animation-name: fade;
+                  animation-duration: 6s;
+            }
+
+            .mySlides {
+                  display: none;
+            }
+
+            #slider {
+                  max-width: 720px;
+                  position: relative;
+                  margin: auto;
+            }
+
+            #slider img {
+                  width: 100%;
+            }
+      </style>
+</head>
+
+<body>
+
+      <div id="slider">
+            <div class="mySlides fade">
+                  <img src="media/img/hamburg-gac21ffd80_1920.jpg" alt="ville">
+            </div>
+            <div class="mySlides fade">
+                  <img src="media/img/butterfly-g138a301d4_1920.jpg" alt="ville">
+            </div>
+            <div class="mySlides fade">
+                  <img src="media/img/mountains-g8ef47dcf1_1920.jpg" alt="ville">
+            </div>
+      </div>
+      <script>
+            let slideIndex = 0; /*********Index=I*********/
+            let slides = document.getElementsByClassName('mySlides');
+            console.log(slides);
+            function showSlides() { /********Showing slides nom de la fonction****************/
+                  for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                  }
+                  slides[slideIndex].style.display = "block";
+
+                  console.log("valeur de l'index:", slideIndex);
+                  slideIndex++;
+                  if (slideIndex >= slides.length) {
+                        slideIndex = 0;
+                  }
+                  //si slidIdex sup ou = a la longeur du tableau on le remet a 0///
+                  setTimeout(showSlides, 4000);
+            }
+            showSlides()
+
+      </script>
+
+</body>
+
+</html>

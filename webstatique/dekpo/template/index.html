@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Template Lib css</title>
+      <link rel="stylesheet" href="lib.css">
+      <style>
+            #myNav a {
+                  color: whitesmoke;
+            }
+
+            .bg-img {
+                  background-image: url("./asset/img/road-g01d845c5b_1920.jpg");
+                  background-size: cover;
+                  background-position: center;
+                  background-repeat: no-repeat;
+                  min-height: 100vh;
+            }
+
+            .bg-img2 {
+                  background-image: url("./asset/img/fire-g1fd002f39_1920.jpg");
+                  background-size: cover;
+                  background-position: center;
+                  background-repeat: no-repeat;
+                  min-height: 90vh;
+            }
+
+            .bg-img3 {
+                  background-image: url("./asset/img/feu-vl.jpg");
+                  background-size: cover;
+                  background-position: center;
+                  background-repeat: no-repeat;
+                  min-height: 90vh;
+            }
+
+            .bg-img-load {
+                  background-image: transparent;
+                  background-size: cover;
+                  background-position: center;
+                  background-repeat: no-repeat;
+                  min-height: 30vh;
+            }
+
+            html {
+                  scroll-behavior: smooth;
+            }
+
+            .w-75pc {
+                  width: 75%;
+            }
+      </style>
+      <script src="https://kit.fontawesome.com/a8f54acc38.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+      <!-- Header -->
+      <header class="lib-top">
+            <!-- Desktop NAV -->
+            <nav id="myNav" class="lib-bar">
+                  <a href="#"
+                        class="lib-bar-item lib-button lib-hide-large lib-right">&#9776;</a><!--lib-bar-item lib-button = class qui sert a faire directement les boutons-->
+                  <a href="#home"
+                        class="lib-bar-item lib-button lib-hide-small">HOME</a><!-- lib-white= couleur directement; lib-hide= mediaqueries deja defenie -->
+                  <a href="#about" class="lib-bar-item lib-button  lib-hide-small">ABOUT</a>
+                  <a href="#portfolio" class="lib-bar-item lib-button  lib-hide-small">PORTFOLIO</a>
+                  <a href="#contact" class="lib-bar-item lib-button  lib-hide-small">CONTACT</a>
+            </nav>
+            <!-- Mobile NAV -->
+            <nav id="mobileNav" class="lib-bar-block lib-white lib-hide">
+                  <a href="#home" class="lib-bar-item lib-button">HOME</a>
+                  <a href="#about" class="lib-bar-item lib-button">ABOUT</a>
+                  <a href="#portfolio" class="lib-bar-item lib-button">PORTFOLIO</a>
+                  <a href="#contact" class="lib-bar-item lib-button">CONTACT</a>
+            </nav>
+      </header>
+
+      <!-- Slider -->
+      <section id="home" class="bg-img lib-display-container">
+            <div class="lib-display-middle lib-animate-zoom">
+                  <span class="lib-black lib-padding-large ">HELLO WORLD</span>
+            </div>
+      </section>
+
+      <!-- About -->
+      <section id="about" class="lib-container lib-justify lib-animate-zoom ">
+            <h3 class="lib-center">ABOUT US</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa autem impedit quas totam aperiam velit in
+                  qui recusandae omnis beatae blanditiis aut vitae alias exercitationem tenetur, consequuntur dolores
+                  quos non molestiae rem veniam quasi harum. Maxime laborum quo et totam molestiae, distinctio magni
+                  perspiciatis delectus dignissimos, doloribus ab libero assumenda minima pariatur deserunt id earum
+                  cupiditate alias sed itaque! Tenetur, debitis perferendis ipsam est dolores provident nemo cum, sint
+                  animi error totam repellat, aspernatur fugiat. Voluptatum quam obcaecati amet dolorum voluptate, atque
+                  corrupti est quia. Sequi aspernatur quam, ullam officiis quod, quos sit eius repellendus, nulla
+                  temporibus reiciendis doloribus hic!</p>
+            <div class="lib-row">
+                  <div class="lib-col m6">
+                        <img class="lib-image" src="asset/img/fire-geac046d76_1920.jpg" alt="feu">
+
+                  </div>
+                  <div class="lib-col m6 lib-padding-large">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus neque alias autem nulla
+                              adipisci aperiam, veritatis culpa ea earum? Voluptate eveniet excepturi soluta et mollitia
+                              iure repellendus fugiat expedita nisi beatae, exercitationem nobis, doloribus repudiandae,
+                              voluptatibus dolorum temporibus! Ea temporibus tenetur facilis perspiciatis tempore
+                              beatae, dolores at consequuntur! Aliquam, quia? Porro, quas. Odio, quo recusandae?
+                        </p>
+                        <div>
+                              <h4>HTML</h4>
+                              <div class="lib-light-green">
+                                    <div class="lib-container lib-dark-gray lib-center" style="width: 95%;">95%</div>
+                              </div>
+
+                        </div>
+                        <div>
+                              <h4>CSS</h4>
+                              <div class="lib-light-green">
+                                    <div class="lib-container lib-dark-gray lib-center w-75pc">75%</div>
+                              </div>
+
+                        </div>
+                        <div>
+                              <h4>JAVASCRIPT</h4>
+                              <div class="lib-light-green">
+                                    <div class="lib-container lib-dark-gray lib-center" style="width: 25%;">25%</div>
+                              </div>
+
+                        </div>
+                  </div>
+                  <!--cOUNT-->
+            </div>
+            <div id="count" class="lib-row lib-center lib-dark-gray lib-padding-24 lib-margin-top">
+                  <div class="lib-col m3">
+                        <p class="lib-xlarge">16+</p>
+                        <p>TEAM</p>
+                  </div>
+                  <div class="lib-col m3">
+                        <p class="lib-xlarge">90+</p>
+                        <p>DAYS</p>
+                  </div>
+                  <div class="lib-col m3">
+                        <p class="lib-xlarge">3+</p>
+                        <p>MASTER</p>
+                  </div>
+                  <div class="lib-col m3">
+                        <p class="lib-xlarge">150+</p>
+                        <p>HAPPY USERS</p>
+                  </div>
+            </div>
+      </section>
+      <!--Banner feu maison-->
+      <section id="Porfolio" class="bg-img2 lib-display-container">
+            <div class="lib-display-middle lib-animate-zoom">
+                  <span class="lib-black lib-padding-large ">Feu de maison</span>
+            </div>
+      </section>
+      <!--Banner content-->
+      <section class="lib-center">
+            <h2>MY WORK</h2>
+            <p>Here are some of my latest lorem work ipsum tipsum. Click on the images to make them bigger</p>
+            <div class="lib-row">
+                  <div>
+                        <img class="lib-col m3" src="./asset/img/extrication-g95d54bc04_1920_2.jpg" alt="">
+                        <img class="lib-col m3" src="./asset/img/firefighters-g0227420ea_1920.jpg" alt="">
+                        <img class="lib-col m3" src="./asset/img/firefighters-ge8dacca16_1920.jpg" alt="">
+                        <img class="lib-col m3" src="./asset/img/firefighters-g2d128965f_1920.jpg" alt="">
+                        <img class="lib-col m3" src="./asset/img/extrication-g95d54bc04_1920_2.jpg" alt="">
+                        <img class="lib-col m3" src="./asset/img/firefighters-g0227420ea_1920.jpg" alt="">
+                        <img class="lib-col m3" src="./asset/img/firefighters-ge8dacca16_1920.jpg" alt="">
+                        <img class="lib-col m3" src="./asset/img/firefighters-g2d128965f_1920.jpg" alt="">
+                  </div>
+            </div>
+      </section>
+
+
+      <section class="bg-img-load lib-display-container">
+            <div class="lib-display-middle lib-animate-opacity">
+                  <span class="lib-light-blue lib-padding-large">LOAD MORE</span>
+            </div>
+      </section>
+      <section id="feu_vl" class="bg-img3 lib-display-container">
+            <div class="lib-display-middle lib-animate-zoom">
+                  <span class="lib-black lib-padding-large ">Feu de VL</span>
+            </div>
+      </section>
+      <section class="lib-center">
+            <h2>WHERE I WORK</h2>
+            <p>I'd love your feedback!</p>
+      </section>
+      <section class="lib-container lib-center">
+            <img class="lib-container" src="./asset/img/maps_3.jpg" alt="">
+      </section>
+      <section>
+            <div>
+                  <i class="fa-solid fa-location-dot">
+                        <p>Chicago,US</p>
+                  </i>
+                  <i class="fa-solid fa-phone">
+                        <p>Phone: +000000</p>
+                  </i>
+                  <i class="fa-solid fa-envelope">
+                        <p>mail@mail.com</p>
+                  </i>
+            </div>
+
+
+      </section>
+
+
+      <!-- Footer -->
+      <footer></footer>
+</body>
+
+</html>

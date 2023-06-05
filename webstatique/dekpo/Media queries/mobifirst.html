@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Responsive basics</title>
+      <style>
+            * {
+                  box-sizing: border-box;
+            }
+
+            html {
+                  font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+
+            /*le mobile d'abord*/
+            [class*="col-"] {
+                  /*tous les attributs class qui commencent par col*/
+                  width: 100%;
+            }
+
+            header,
+            footer {
+                  background-color: purple;
+                  color: white;
+                  padding: 15px;
+            }
+
+            nav ul {
+                  list-style: none;
+                  margin: 0;
+                  padding: 0;
+            }
+
+            nav ul li {
+                  background-color: dodgerblue;
+                  color: white;
+                  padding: 10px;
+                  margin-bottom: 10px;
+                  box-shadow: 0 1px 3px #cccccc, 0 1px 2px #1a1919;
+            }
+
+            nav ul li:hover {
+                  background-color: rgb(61, 107, 153);
+                  cursor: pointer;
+            }
+
+            .right {
+                  background-color: dodgerblue;
+                  color: white;
+            }
+
+            .right ul {
+                  list-style: none;
+            }
+
+            .right ul li {
+                  margin-bottom: 10px;
+                  padding: 10px;
+            }
+
+            .row::after {
+                  content: "";
+                  clear: both;
+                  display: block;
+            }
+
+            [class*="col-"] {
+                  padding: 15px;
+            }
+
+
+            /*pour les fenêtres dont la largeur est supérieure à 768px, et inférieure à 991px*/
+            @media only screen and (min-width: 768px) and (max-width: 991px) {
+                  /*le mobile est là*/
+
+
+                  [class*="col-"] {
+                        float: left;
+                        /*ancienne méthode simple mais dépréciée aujourd'hui au profit de flex...*/
+                  }
+
+                  .col-tab-12 {
+                        width: 100%;
+                  }
+
+                  .col-tab-9 {
+                        width: 75%;
+                  }
+
+                  .col-tab-6 {
+                        width: 50%;
+                  }
+
+                  .col-tab-3 {
+                        width: 50%;
+                  }
+
+                  /*
+                .right {
+                    width: 100%;   
+                }
+                */
+                  /*     /!\ à l'ordre  /!\    */
+            }
+
+            @media only screen and (min-width: 992px) {
+
+                  /*pour le desktop*/
+                  [class*="col-"] {
+                        float: left;
+                        /*pour les vieux de la vieille...*/
+                  }
+
+                  .col-12 {
+                        width: 100%;
+                  }
+
+                  .col-9 {
+                        width: 75%;
+                  }
+
+                  .col-6 {
+                        width: 50%;
+                  }
+
+                  .col-3 {
+                        width: 25%;
+                  }
+            }
+      </style>
+</head>
+
+<body>
+      <header>
+            <h1>Header</h1>
+      </header>
+      <section class="row">
+
+            <nav>
+                  <ul class="col-3 col-tab-6">
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Gallery</li>
+                        <li>Contact</li>
+                  </ul>
+            </nav>
+
+            <div class="col-6 col-tab-6">
+                  <h2>Home of the responsive Web Design</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus voluptatum harum similique
+                        quo atque, ex cupiditate ipsa. Voluptates voluptatum officia nulla fugiat soluta accusamus
+                        corrupti hic sapiente, suscipit numquam quaerat a animi ad vitae ducimus. Debitis, praesentium
+                        itaque sed rerum cumque, culpa aliquid, fugit tempora aspernatur facere dolorum corrupti placeat
+                        sequi sapiente. Nemo nam quos sapiente natus deleniti temporibus dolores tempora quas enim
+                        optio, ipsa deserunt animi harum fugit itaque eius ab? Quia hic consequatur atque quo illum illo
+                        officiis at nostrum! Recusandae atque explicabo id in. Numquam, assumenda nihil neque
+                        praesentium temporibus necessitatibus quam porro nesciunt animi optio ullam, ducimus ut,
+                        provident tempora quo? Quod ducimus laudantium sapiente impedit rem enim excepturi ipsam sequi?
+                        Fuga non nam cupiditate velit. Voluptatibus nemo labore incidunt velit itaque debitis suscipit
+                        sint porro perspiciatis delectus eum, eligendi quae, provident quis quia alias maiores obcaecati
+                        quidem. Aliquam ducimus enim, omnis nostrum autem ad ratione sit minima, accusamus nulla odit
+                        delectus.</p>
+            </div>
+
+            <div class="col-3 col-tab-12 right">
+                  <h3>Side Menu</h3>
+                  <ul>
+                        <li>What ?</li>
+                        <li>Where ?</li>
+                        <li>How ?</li>
+                  </ul>
+            </div>
+      </section>
+
+      <footer>
+            <h3>Footer</h3>
+      </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Resposive basics</title>
+      <style>
+            * {
+                  box-sizing: border-box;
+            }
+
+            html {
+                  font-family: Verdana, Geneva, Tahoma, sans-serif
+            }
+
+            header,
+            footer {
+                  background-color: red;
+                  color: white;
+                  padding: 15px;
+            }
+
+            nav ul {
+                  list-style: none;
+                  margin: 0;
+                  padding: 0;
+            }
+
+            nav ul li {
+                  background-color: greenyellow;
+                  color: gray;
+                  padding: 10px;
+                  margin-bottom: 10px;
+                  box-shadow: 0 1px 3px 0 #ccc, 0 1px 2px #1a1919
+            }
+
+            nav ul li:hover {
+                  background-color: rgb(255, 0, 128);
+                  cursor: pointer;
+
+            }
+
+            .row::after {
+                  content: "";
+                  clear: both;
+                  display: block;
+                  padding: 15px;
+            }
+
+            [ class *="col-"] {
+                  width: 100%;
+                  float: left;
+                  padding: 15px;
+
+            }
+
+
+            .col-l2 {
+                  width: 100%;
+
+            }
+
+            .col-9 {
+                  width: 75%;
+            }
+
+            .col-6 {
+                  width: 50%;
+            }
+
+            .col-3 {
+                  width: 25%;
+            }
+
+            /*pour les fenêtres dont la largeur est inférieure à 768px, toutes les colonnes font 100%*/
+            @media screen and (max-width:760px) {
+
+                  /*les mobile==*/
+                  [ class *="col-"] {
+                        width: 100%;
+                  }
+
+
+            }
+
+            .right {
+                  background-color: aqua;
+                  color: black;
+            }
+
+            .right ul {
+                  list-style: none;
+            }
+
+            .right ul li {
+                  margin: 0;
+                  padding-bottom: 10px;
+                  padding: 10px;
+            }
+      </style>
+</head>
+
+<body>
+      <header>
+            <h1>header</h1>
+      </header>
+      <section class="row">
+            <nav>
+                  <ul class="col-3">
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Gellery</li>
+                        <li>Contact</li>
+                  </ul>
+            </nav>
+            <div class="col-6">
+                  <h2>Home This is Respossive web Design</h2>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur officia, vitae quo vel
+                        voluptatum ducimus assumenda. Repudiandae sapiente eos fugiat quos eius adipisci, numquam id,
+                        non minus consequuntur libero quibusdam ipsam cumque! Itaque, doloremque iusto exercitationem
+                        voluptatem laudantium error quae sequi saepe! Veritatis pariatur voluptas qui, nisi illum
+                        aperiam animi totam enim omnis labore iure obcaecati provident ex velit est. Vel blanditiis a,
+                        necessitatibus soluta repellendus tempore velit corporis exercitationem voluptatum aut
+                        aspernatur tempora autem vitae ipsam sapiente itaque nostrum! Dolorum eum corporis temporibus
+                        voluptates nostrum sunt provident minima asperiores, nulla cum error commodi autem, minus vero
+                        aliquam tempore eos impedit quos aperiam? Dolor numquam facere laudantium voluptas accusantium
+                        architecto. Adipisci quos esse est similique voluptate deleniti debitis odit laboriosam natus
+                        quasi? Veritatis ea consequuntur impedit nisi ut pariatur similique nam, consequatur animi
+                        expedita commodi vitae, labore ullam, nihil quas optio repellendus! Debitis quaerat harum hic
+                        quam tempore repellendus, iure aperiam odit adipisci placeat esse libero.</p>
+            </div>
+            <div class="col-3 right">
+                  <h3>Side Menu</h3>
+                  <ul>
+                        <li>What?</li>
+                        <li>Where?</li>
+                        <li>Whow?</li>
+                  </ul>
+            </div>
+
+
+      </section>
+      <footer>
+            <h3>Footer</h3>
+      </footer>
+
+
+</body>
+
+</html>
